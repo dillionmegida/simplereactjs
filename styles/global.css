@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --react: #61dafb;
+}
+
+body {
+  margin: 0;
+  background-color: #27505b;
+  font-family: "Outfit", "Courier New", Courier, monospace;
+  text-align: center;
+}
+
+h1 {
+  font-size: clamp(4rem, 10vw, 8rem);
+  color: white;
+  margin: 10px 0;
+  color: color-mix(in srgb, var(--react), white 40%);
+  font-weight: 800;
+}
+
+span {
+    font-size: 1.6rem;
+    color: white;
+}
+
+a {
+    color: yellow;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+  margin: 40px 0;
+  color: white;
+  font-size: 2rem;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  flex-direction: column;
+}
