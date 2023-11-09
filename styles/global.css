@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&display=swap");
 
 * {
   box-sizing: border-box;
@@ -18,35 +18,31 @@ body {
 h1 {
   font-size: clamp(4rem, 10vw, 8rem);
   color: white;
-  margin: 10px 0;
   color: color-mix(in srgb, var(--react), white 40%);
   font-weight: 800;
 }
 
-span {
-    font-size: 1.6rem;
-    color: white;
-}
-
 a {
-    color: yellow;
-    text-decoration: none;
+  color: yellow;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 p {
-  margin: 40px 0;
   color: white;
   font-size: 2rem;
 }
 
-.main {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 100px;
+  padding: 100px 20px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
   flex-direction: column;
 }
