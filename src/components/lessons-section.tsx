@@ -33,7 +33,7 @@ const Section = styled.section`
       filter: blur(5px);
       border-radius: inherit;
       z-index: -1;
-      opacity: .5;
+      opacity: 0.5;
     }
 
     &::after {
@@ -156,6 +156,11 @@ const lessons = [
     title: "Props",
     cover: "/lessons/3-component-props.png",
     youtube: "https://youtu.be/KGDi6818H4w",
+  },
+  {
+    title: "CSS and Styles",
+    cover: "/lessons/4-component-styling.png",
+    youtube: "https://youtu.be/SLbgWLI0mOI",
   },
 ]
 
