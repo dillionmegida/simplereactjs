@@ -23,17 +23,21 @@ const Section = styled.section`
     transform: perspective(1000px) rotateX(var(--x-deg)) rotateY(var(--y-deg));
     transform-style: preserve-3d;
 
+    @supports (font: -apple-system-body) and (-webkit-appearance: none) {
+      /* for only safari */
+      border: 2px solid yellow;
+    }
+
     &::before {
       content: "";
       inset: 3px;
       background-color: color-mix(in srgb, black, transparent 10%);
       position: absolute;
-      --scale: 1;
-      transform: translateZ(-19px) scale(var(--scale));
       filter: blur(5px);
       border-radius: inherit;
       z-index: -1;
       opacity: 0.5;
+      transform: translateZ(-20px);
     }
 
     &::after {
@@ -42,9 +46,17 @@ const Section = styled.section`
       background-color: color-mix(in srgb, yellow, transparent 50%);
       position: absolute;
       z-index: -2;
-      --scale: 1;
-      transform: translateZ(-20px) scale(var(--scale));
       border-radius: inherit;
+      transform: translateZ(-20px);
+    }
+
+    &::before,
+    &::after {
+      @supports (font: -apple-system-body) and (-webkit-appearance: none) {
+        /* for only safari */
+        display: none;
+        transform: none;
+      }
     }
   }
 
@@ -53,10 +65,8 @@ const Section = styled.section`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 50px;
-    /* perspective: 1000px; */
 
     .lesson {
-      /* border: 4px solid color-mix(in srgb, black, transparent 80%); */
       border-radius: 10px;
       transition: border-color 300ms, transform 300ms;
       position: relative;
@@ -64,6 +74,8 @@ const Section = styled.section`
       --y-deg: 20deg;
       transform: perspective(1000px) rotateX(var(--x-deg)) rotateY(var(--y-deg));
       transform-style: preserve-3d;
+      aspect-ratio: 16/9;
+      /* transform-origin: center; */
 
       &:hover,
       &:focus {
@@ -85,18 +97,20 @@ const Section = styled.section`
         }
       }
 
-      &::before &::after {
+      &::before,
+      &::after {
         transition: transform 300ms, background-color 300ms;
       }
 
       &::before {
         content: "";
-        inset: 4px;
+        inset: -5px;
         background-color: color-mix(in srgb, black, transparent 10%);
         position: absolute;
-        --scale: 1;
-        transform: translateZ(-40px) scale(var(--scale));
-        filter: blur(4px);
+        /* -webkit-transform: translateZ(-40px); */
+        filter: blur(5px);
+        opacity: 0.3;
+        z-index: -1;
         border-radius: inherit;
       }
 
@@ -105,9 +119,21 @@ const Section = styled.section`
         inset: -15px;
         background-color: color-mix(in srgb, yellow, transparent 50%);
         position: absolute;
-        --scale: 1;
-        transform: translateZ(-40px) scale(var(--scale));
+        z-index: -2;
+
+        /* -webkit-perspective: 1000; */
+
+        /* -webkit-transform: translateZ(-40px); */
         border-radius: inherit;
+      }
+
+      &::before,
+      &::after {
+        transform: translateZ(-40px);
+        @supports (font: -apple-system-body) and (-webkit-appearance: none) {
+          /* for only safari */
+          transform: none;
+        }
       }
 
       /* &::after {
