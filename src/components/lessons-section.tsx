@@ -162,6 +162,11 @@ const lessons = [
     cover: "/lessons/4-component-styling.png",
     youtube: "https://youtu.be/SLbgWLI0mOI",
   },
+  {
+    title: "First Project",
+    cover: "/lessons/5-project-1.png",
+    youtube: "https://youtu.be/jjtyWInyTw8",
+  },
 ]
 
 export default function LessonsSection() {
