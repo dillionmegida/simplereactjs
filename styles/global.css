@@ -24,17 +24,19 @@ h1 {
 }
 
 a {
-  color: yellow;
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 p {
   color: white;
   font-size: 2rem;
+}
+
+ul,
+ol {
+  list-style: none;
+  width: 100%;
+  padding: 0;
 }
 
 .container {
