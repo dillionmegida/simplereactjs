@@ -49,3 +49,9 @@ ol {
   margin: 0 auto;
   flex-direction: column;
 }
+
+@media (max-width: 500px) {
+  .container {
+    padding: 40px 20px;
+  }
+}
