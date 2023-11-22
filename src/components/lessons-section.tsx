@@ -3,6 +3,7 @@ import styled from "styled-components"
 import NewTabLink from "../components/new-tab-link"
 import YouTube from "../components/Icon/YouTube"
 import { addTimes } from "../helpers/time"
+import { lessons } from "./lessons"
 
 const Section = styled.section`
   /* background-color: color-mix(in srgb, black, transparent 90%); */
@@ -72,82 +73,21 @@ const Section = styled.section`
       text-align: left;
       line-height: 1.6;
       font-size: 1.2rem;
-
     }
 
     &__duration {
-     color: color-mix(in srgb, white, var(--primary) 50%);
-     font-size: 1rem;
-     line-height: 2;
+      color: color-mix(in srgb, white, var(--primary) 50%);
+      font-size: 1rem;
+      line-height: 2;
     }
   }
 `
-
-const lessons = [
-  {
-    label: "Introduction",
-    lessons: [
-      {
-        title: "Introduction to the course",
-        cover: "/lessons/0-react-intro.png",
-        youtube: "https://youtu.be/iqYK2UgNv-w",
-        duration: "03:14",
-      },
-      {
-        title: "Setting up React environment with Vite",
-        cover: "/lessons/1-vite-react.png",
-        youtube: "https://youtu.be/iUdJTMGC6aI",
-        duration: "11:53",
-      },
-    ],
-  },
-  {
-    label: "Components, Props, JSX, Styles",
-    lessons: [
-      {
-        title: "Understanding Components and JSX",
-        cover: "/lessons/2-component-jsx.png",
-        youtube: "https://youtu.be/QqiByoW1eik",
-        duration: "10:24",
-      },
-      {
-        title: "Props - A Detailed Explanation",
-        cover: "/lessons/3-component-props.png",
-        youtube: "https://youtu.be/KGDi6818H4w",
-        duration: "19:38",
-      },
-      {
-        title: "CSS and Styles - An Introduction",
-        cover: "/lessons/4-component-styling.png",
-        youtube: "https://youtu.be/SLbgWLI0mOI",
-        duration: "18:38",
-      },
-      {
-        title: "Pricing Card Component Project",
-        cover: "/lessons/5-project-1.png",
-        youtube: "https://youtu.be/jjtyWInyTw8",
-        duration: "20:59",
-      },
-    ],
-  },
-  {
-    label: "Composition, Lists",
-    lessons: [
-      {
-        title: "Rendering Lists in Components",
-        cover: "/lessons/6-rendering-lists.png",
-        youtube: "https://youtu.be/40aGM_Cz5h8",
-        duration: "12:39",
-      },
-    ],
-  },
-]
 
 export default function LessonsSection() {
   return (
     <Section>
       <div className="container">
-        <h2 className="heading">Course Outline</h2>
+        <h2 className="heading">Course Outline [Click on any]</h2>
         {lessons.map(lesson => (
           <div className="lesson__section">
             <div className="lesson__section-label">
