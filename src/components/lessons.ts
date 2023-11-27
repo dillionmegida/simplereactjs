@@ -60,6 +60,12 @@ export const lessons = [
         youtube: "https://youtu.be/g-rD7CMzUe8",
         duration: "14:26",
       },
+      {
+        title: "Conditional Rendering",
+        cover: "/lessons/8-conditional-rendering.png",
+        youtube: "https://youtu.be/H8qPvRudYsg",
+        duration: "09:55",
+      },
     ],
   }
 ]
