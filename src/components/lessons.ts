@@ -66,6 +66,36 @@ export const lessons = [
         youtube: "https://youtu.be/H8qPvRudYsg",
         duration: "09:55",
       },
+      {
+        title: "Build and share with Codesandbox",
+        youtube: "https://youtu.be/urc32zblEqc",
+        duration: "03:00"
+      }
+    ],
+  },
+  {
+    label: "Upcoming Videos",
+    lessons: [
+      {
+        title: "PropTypes for React Components",
+        youtube: null,
+        duration: "00:00",
+      },
+      {
+        title: "Reading React Errors",
+        youtube: null,
+        duration: "00:00",
+      },
+      {
+        title: "Handling Events in Components",
+        youtube: null,
+        duration: "00:00",
+      },
+      {
+        title: "State and Lifecycles",
+        youtube: null,
+        duration: "00:00",
+      },
     ],
   }
 ]

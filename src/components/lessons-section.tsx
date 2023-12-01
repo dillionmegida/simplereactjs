@@ -4,6 +4,7 @@ import NewTabLink from "../components/new-tab-link"
 import YouTube from "../components/Icon/YouTube"
 import { addTimes } from "../helpers/time"
 import { lessons } from "./lessons"
+import classNames from "classnames"
 
 const Section = styled.section`
   /* background-color: color-mix(in srgb, black, transparent 90%); */
@@ -48,11 +49,19 @@ const Section = styled.section`
       display: flex;
       align-items: flex-start;
       gap: 15px;
-      background-color: color-mix(in srgb, black, transparent 50%);
+      --background-color: color-mix(in srgb, black, transparent 50%);
+      background-color: var(--background-color);
       width: 100%;
       padding: 30px;
       color: white;
       transition: color 300ms, background-color 300ms;
+      --color-on-hover: yellow;
+
+      &--not-published {
+        cursor: not-allowed;
+        --color-on-hover: white;
+        --background-color: color-mix(in srgb, black, transparent 95%);
+      }
 
       @media (max-width: 500px) {
         padding: 20px;
@@ -61,11 +70,12 @@ const Section = styled.section`
       &:hover,
       &:focus {
         background-color: var(--primary);
-        color: yellow;
+        color: var(--color-on-hover);
         text-decoration: none;
         box-shadow: 1px 1px 20px color-mix(in srgb, black, transparent 80%);
       }
     }
+
 
     &__title {
       flex: 1;
@@ -97,8 +107,14 @@ export default function LessonsSection() {
             </div>
             {lesson.lessons.map(lesson => (
               <ul className="lesson-items">
-                <li key={lesson.title} className="lesson-item">
-                  <NewTabLink href={lesson.youtube} className="lesson__link">
+                <li key={lesson.title}>
+                  <NewTabLink
+                    href={lesson.youtube}
+                    className={classNames(
+                      "lesson__link",
+                      !lesson.youtube && "lesson__link--not-published"
+                    )}
+                  >
                     {/* <img
               className="lesson__cover"
               src={lesson.cover}
