@@ -74,20 +74,31 @@ export const lessons = [
     ],
   },
   {
+    label: "Types and Events",
+    lessons: [
+      
+      {
+        title: "PropTypes for React Components",
+        youtube: "https://youtu.be/rWMmxEdkYws",
+        duration: "13:57",
+      },
+      {
+        title: "Handling Events in Components",
+        youtube: "https://youtu.be/dqlsGTHGcF0",
+        duration: "16:42",
+      },
+    ]
+  },
+  {
     label: "Upcoming Videos",
     lessons: [
       {
-        title: "PropTypes for React Components",
+        title: "Hosting React Application",
         youtube: null,
         duration: "00:00",
       },
       {
         title: "Reading React Errors",
-        youtube: null,
-        duration: "00:00",
-      },
-      {
-        title: "Handling Events in Components",
         youtube: null,
         duration: "00:00",
       },
