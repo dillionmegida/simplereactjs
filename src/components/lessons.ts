@@ -90,20 +90,47 @@ export const lessons = [
     ]
   },
   {
+    label: "Hosting Application",
+    lessons: [
+      
+      {
+        title: "Hosting your React Applications on Netlify with Continuous Deployments",
+        youtube: "https://youtu.be/QNhZl2noMeU",
+        duration: "09:42",
+      }
+    ]
+  },
+  {
+    label: "More React Fundamentals",
+    lessons: [
+      
+      {
+        title: "Intermediate React Fundamentals To Know",
+        youtube: "https://youtu.be/02gVHmI5y2w",
+        duration: "07:40",
+      },
+      {
+        title: "React Component State Simplified, with the useState hook",
+        youtube: "https://youtu.be/dD6O4IW9pu0",
+        duration: "28:51",
+      },
+    ]
+  },
+  {
     label: "Upcoming Videos",
     lessons: [
-      {
-        title: "Hosting React Application",
-        youtube: null,
-        duration: "00:00",
-      },
       {
         title: "Reading React Errors",
         youtube: null,
         duration: "00:00",
       },
       {
-        title: "State and Lifecycles",
+        title: "Lifecycles and Hooks",
+        youtube: null,
+        duration: "00:00",
+      },
+      {
+        title: "Routing and Navigation",
         youtube: null,
         duration: "00:00",
       },
