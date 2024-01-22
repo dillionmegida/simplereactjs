@@ -69,14 +69,13 @@ export const lessons = [
       {
         title: "Build and share with Codesandbox",
         youtube: "https://youtu.be/urc32zblEqc",
-        duration: "03:00"
-      }
+        duration: "03:00",
+      },
     ],
   },
   {
     label: "Types and Events",
     lessons: [
-      
       {
         title: "PropTypes for React Components",
         youtube: "https://youtu.be/rWMmxEdkYws",
@@ -87,32 +86,55 @@ export const lessons = [
         youtube: "https://youtu.be/dqlsGTHGcF0",
         duration: "16:42",
       },
-    ]
+    ],
   },
   {
     label: "Hosting Application",
     lessons: [
-      
       {
-        title: "Hosting your React Applications on Netlify with Continuous Deployments",
+        title:
+          "Hosting your React Applications on Netlify with Continuous Deployments",
         youtube: "https://youtu.be/QNhZl2noMeU",
         duration: "09:42",
-      }
-    ]
+      },
+    ],
   },
   {
-    label: "More React Fundamentals",
     lessons: [
-      
       {
         title: "Intermediate React Fundamentals To Know",
         youtube: "https://youtu.be/02gVHmI5y2w",
         duration: "07:40",
       },
+    ],
+  },
+  {
+    label: "State in Components",
+    lessons: [
       {
         title: "React Component State Simplified, with the useState hook",
         youtube: "https://youtu.be/dD6O4IW9pu0",
         duration: "28:51",
+      },
+      {
+        title: "What does ASYNCHRONOUS or BATCHED STATE IN REACT mean?",
+        youtube: "https://youtu.be/xVSKFKLSV3o",
+        duration: "09:56",
+      },
+      {
+        title: "How does REACT STATE work in Controlled Components?",
+        youtube: "https://youtu.be/SqF-rD2AIiw",
+        duration: "19:20",
+      },
+    ],
+  },
+  {
+    label: "Lifecycles and Side Effects",
+    lessons: [
+      {
+        title: "The Lifecycle of a Component",
+        youtube: "https://youtu.be/3xn_z1qNa0U",
+        duration: "19:00",
       },
     ]
   },
@@ -125,15 +147,10 @@ export const lessons = [
         duration: "00:00",
       },
       {
-        title: "Lifecycles and Hooks",
-        youtube: null,
-        duration: "00:00",
-      },
-      {
         title: "Routing and Navigation",
         youtube: null,
         duration: "00:00",
       },
     ],
-  }
+  },
 ]

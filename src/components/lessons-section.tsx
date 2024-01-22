@@ -76,7 +76,6 @@ const Section = styled.section`
       }
     }
 
-
     &__title {
       flex: 1;
       width: 100%;
@@ -100,12 +99,18 @@ export default function LessonsSection() {
         <h2 className="heading">Course Outline [Click on any]</h2>
         {lessons.map(lesson => (
           <div className="lesson__section">
-            <div className="lesson__section-label">
-              <span className="lesson__section-label-text">{lesson.label}</span>
+            {lesson.label && lesson.lessons ? (
+              <div className="lesson__section-label">
+                <span className="lesson__section-label-text">
+                  {lesson.label}
+                </span>
 
-              <span>{addTimes(lesson.lessons.map(l => l.duration))}</span>
-            </div>
-            {lesson.lessons.map(lesson => (
+                <span>{addTimes(lesson.lessons.map(l => l.duration))}</span>
+              </div>
+            ) : (
+              <div className="lesson__section-label">...</div>
+            )}
+            {lesson.lessons?.map(lesson => (
               <ul className="lesson-items">
                 <li key={lesson.title}>
                   <NewTabLink
