@@ -129,12 +129,27 @@ export const lessons = [
     ],
   },
   {
-    label: "Lifecycles and Side Effects",
+    label: "Lifecycles, Side Effects and useEffect",
     lessons: [
       {
         title: "The Lifecycle of a Component",
         youtube: "https://youtu.be/3xn_z1qNa0U",
         duration: "19:00",
+      },
+      {
+        title: "Lifecycle in Functional Components",
+        youtube: "https://youtu.be/X6wfxggHO5A",
+        duration: "14:40",
+      },
+      {
+        title: "React useEffect Hook",
+        youtube: "https://youtu.be/PLyuk5OKlnY",
+        duration: "19:14",
+      },
+      {
+        title: "React useEffect hook with Object Dependency",
+        youtube: "https://youtu.be/6aWyYMGYNjE",
+        duration: "06:55",
       },
     ]
   },
