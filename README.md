@@ -1,3 +1,3 @@
 # simplereactjs
 
-More info...
+Domain moved to [simplereact.dev](https://simplereact.dev)
